@@ -1,0 +1,34 @@
+[
+  {
+    "file": "usgs/usgs-1960-05-05.tif",
+    "originalFilename": "USGS 1960-05-05.tif",
+    "label": "USGS aerial photograph, May 5, 1960",
+    "bytes": 103014562,
+    "sha256": "871b6faed2b2692e1fe0b23f9720b9de0fb4d847714a32d9b73252308bd16fff",
+    "note": "Original supplied TIFF; not georeferenced or cropped."
+  },
+  {
+    "file": "usgs/usgs-1966-02-23.tif",
+    "originalFilename": "USGS 1966-02-23 .tif",
+    "label": "USGS aerial photograph, February 23, 1966",
+    "bytes": 100201042,
+    "sha256": "09d355a3d3b83d77c829ae658de7af1ec5c6be7957ba333ec78910d568b87e9b",
+    "note": "Original supplied TIFF; not georeferenced or cropped."
+  },
+  {
+    "file": "site-plans/lincoln-square-development-plan-1956.png",
+    "originalFilename": "lincoln-square-development-plan-1956.png",
+    "label": "Lincoln Square Development Plan, 1956",
+    "bytes": 8083193,
+    "sha256": "ab4149f874940713a41e0d63555e25f2c2b78023ecb1d1eb6863551e200d05b1",
+    "note": "Original supplied PNG; not georeferenced or cropped."
+  },
+  {
+    "file": "site-plans/lincoln-square-site-plan-restored-1956.jpg",
+    "originalFilename": "lincoln-square-site-plan-restored-v4.jpg",
+    "label": "Lincoln Square Site Plan, May 28, 1956 (restored)",
+    "bytes": 15079818,
+    "sha256": "cd1d1dd0c920a03a822ebefc9c5292f1d598335c40ef811c8597910f4ec871b2",
+    "note": "Supplied restored JPEG, including the documented binding removal and page alignment; not the untouched NYPL scan. Not georeferenced or cropped."
+  }
+]

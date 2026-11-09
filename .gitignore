@@ -1,0 +1,38 @@
+# Local processing downloads and generated checks
+.cache/
+__pycache__/
+*.py[cod]
+node_modules/
+test-results/
+.venv/
+venv/
+
+# Local credentials, editor state, and operating-system files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# GIS working files: publish only prepared site assets and deliberate downloads
+*.qgz
+*.qgs
+*.gpkg
+*.gpkg-*
+*.points
+*.aux.xml
+*.ovr
+*.tfw
+*.tif
+*.tiff
+!/raw-images/**/*.tif
+!/raw-images/**/*.tiff
+
+# Editable favicon source; only the self-contained SVG is published
+.local-assets/
+favicon-EDIT ME.png

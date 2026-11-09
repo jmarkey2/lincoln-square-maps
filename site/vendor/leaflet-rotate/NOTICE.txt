@@ -1,0 +1,2 @@
+leaflet-rotate 0.5.3 — https://github.com/Raruto/leaflet-rotate
+Unmodified browser distribution and corresponding source. GPL-3.0; see LICENSE.

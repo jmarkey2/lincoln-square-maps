@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Map Boundary",
+    "provider": "ogr",
+    "source": "./Boundaries.gpkg|layername=Map Boundary",
+    "crs": "EPSG:3857"
+  },
+  {
+    "name": "OSM MVT- Simple Basemap JM-30DayMapChallenge",
+    "provider": "xyzvectortiles",
+    "source": "type=xyz&url=https://vector.openstreetmap.org/shortbread_v1/%7Bz%7D/%7Bx%7D/%7By%7D.mvt&zmax=14&zmin=0&http-header:referer=",
+    "crs": "EPSG:3857"
+  },
+  {
+    "name": "1960 - USGS Orthoimagery",
+    "provider": "gdal",
+    "source": "./USGS Orthoimagery 1960-05-05_georeferenced.tif",
+    "crs": "EPSG:3857"
+  },
+  {
+    "name": "1966 - USGS Orthoimagery",
+    "provider": "gdal",
+    "source": "./USGS Orthoimagery 1966-02-23 _georeferenced.tif",
+    "crs": "EPSG:3857"
+  },
+  {
+    "name": "UrbanRenewalArea",
+    "provider": "ogr",
+    "source": "./Boundaries.gpkg|layername=UrbanRenewalArea",
+    "crs": "EPSG:3857"
+  },
+  {
+    "name": "OpenStreetMap",
+    "provider": "wms",
+    "source": "type=xyz&url=https://tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&zmax=19&zmin=0",
+    "crs": "EPSG:3857"
+  },
+  {
+    "name": "1924 - NYC Orthoimagery",
+    "provider": "wms",
+    "source": "http-header:referer=&type=xyz&url=https://tiles.arcgis.com/tiles/yG5s3afENB5iO9fj/arcgis/rest/services/Ortho_1924_Mosaic/MapServer/tile/%7Bz%7D/%7By%7D/%7Bx%7D&zmax=18&zmin=0",
+    "crs": "EPSG:3857"
+  },
+  {
+    "name": "1951 - NYC Orthoimagery",
+    "provider": "wms",
+    "source": "http-header:referer=&type=xyz&url=https://tiles.arcgis.com/tiles/yG5s3afENB5iO9fj/arcgis/rest/services/NYC_Orthos_1951/MapServer/tile/%7Bz%7D/%7By%7D/%7Bx%7D&zmax=18&zmin=0",
+    "crs": "EPSG:3857"
+  },
+  {
+    "name": "1996 - NYC Orthoimagery",
+    "provider": "wms",
+    "source": "http-header:referer=&type=xyz&url=https://tiles.arcgis.com/tiles/yG5s3afENB5iO9fj/arcgis/rest/services/Ortho_1996_Mosaic/MapServer/tile/%7Bz%7D/%7By%7D/%7Bx%7D&zmax=18&zmin=0",
+    "crs": "EPSG:3857"
+  },
+  {
+    "name": "2024 - NYC Orthoimagery",
+    "provider": "wms",
+    "source": "http-header:referer=&type=xyz&url=https://tiles.arcgis.com/tiles/yG5s3afENB5iO9fj/arcgis/rest/services/NYC_Orthos_2024/MapServer/tile/%7Bz%7D/%7By%7D/%7Bx%7D&zmax=18&zmin=0",
+    "crs": "EPSG:3857"
+  },
+  {
+    "name": "1956 - lincoln-square-site-plan 1",
+    "provider": "gdal",
+    "source": "./lincoln-square-development-plan-1956_georeferenced.tif",
+    "crs": "EPSG:3857"
+  },
+  {
+    "name": "1956 - lincoln-square-site-plan 2",
+    "provider": "gdal",
+    "source": "./lincoln-square-site-plan-restored-1956_georeferenced.tif",
+    "crs": "EPSG:3857"
+  }
+]

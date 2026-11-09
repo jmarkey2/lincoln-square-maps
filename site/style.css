@@ -1,0 +1,19 @@
+/* Keep browser defaults except where needed for the map and control layout. */
+main { width: 75%; margin: 0 auto; }
+#map { width: 100%; aspect-ratio: 1.617 / 1; min-height: 180px; }
+#controls { border: 0; padding: 0; margin: 1em 0; min-width: 0; }
+.selections { display: flex; flex-wrap: wrap; align-items: center; gap: .5em 1em; }
+.selections label { white-space: nowrap; }
+.selections select { max-width: 100%; min-height: 2rem; }
+.blend { display: flex; align-items: center; gap: .5em; margin-top: .75em; }
+.blend input { flex: 1; min-width: 0; touch-action: none; }
+#opacity, #boundary { accent-color: #0000ee; }
+.blend span { white-space: nowrap; }
+.map-status.ready { display: none; }
+.leaflet-control-attribution { max-width: calc(100% - 20px); }
+.compass { background: white; padding: 4px 8px; text-align: center; font: 16px serif; }
+.compass span { display: block; }
+.compass-arrow { font-size: 24px; line-height: 1; }
+@media (max-width: 700px) {
+  main { width: 100%; }
+}

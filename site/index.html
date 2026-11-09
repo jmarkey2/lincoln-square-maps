@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare historical plans and aerial photographs of Lincoln Square, Manhattan, from 1924 to 2024.">
+  <title>The Remaking of Lincoln Square</title>
+  <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="style.css?v=20261109-3">
+  <script defer src="vendor/leaflet/leaflet.js"></script>
+  <script defer src="vendor/leaflet-rotate/dist/leaflet-rotate.js"></script>
+  <script defer src="app.js?v=20261109-2"></script>
+</head>
+<body>
+  <main>
+    <h1>The Remaking of Lincoln Square</h1>
+    <p>Jake Markey</p>
+    <div id="map" aria-label="Interactive map of Lincoln Square" role="region"></div>
+    <p id="map-status" class="map-status" role="status" aria-live="polite">Loading map…</p>
+    <noscript><p>Enable JavaScript to use the map viewer.</p></noscript>
+    <fieldset id="controls" disabled aria-label="Map comparison controls">
+      <div class="selections">
+        <label for="top-layer">Map 1: <select id="top-layer"></select></label>
+        <label for="bottom-layer">Map 2: <select id="bottom-layer"></select></label>
+        <label for="boundary"><input id="boundary" type="checkbox" checked> Urban renewal boundary</label>
+      </div>
+      <div class="blend">
+        <span>Map 1</span>
+        <input id="opacity" aria-label="Blend toward Map 2" type="range" min="0" max="100" value="45" step="0.1">
+        <span>Map 2</span>
+      </div>
+    </fieldset>
+    <hr>
+    <section aria-label="Project description">
+      <p>The Lincoln Square Urban Renewal Project transformed a large section of Manhattan's Upper West Side during the late 1950s and 1960s. The redevelopment replaced much of the existing neighborhood with Lincoln Center for the Performing Arts, residential superblocks, and other institutions. The project reflected a modernist approach to urban planning that envisioned a more orderly city through large-scale redevelopment, monumental architecture, and open space. This transformation also displaced thousands of residents and hundreds of businesses.</p>
+      <p>I created this interactive map for Day 8 of the <a href="https://30daymapchallenge.com/">2026 30 Day Map Challenge</a>, whose theme is <em>Utopia</em>. Rather than presenting Lincoln Square as a utopia, the map explores how planners attempted to realize an idealized (<em>utopian</em>) vision of the city, and how that vision transformed the neighborhood. The viewer compares historical aerial imagery, original development plans, and contemporary orthophotography.</p>
+    </section>
+    <section aria-labelledby="sources-title">
+      <h2 id="sources-title">Sources</h2>
+      <ul>
+        <li><strong>Lincoln Square Development Plan (1956):</strong> Lincoln Center for the Performing Arts, via <a href="https://artsandculture.google.com/story/fgUBTK2US70oKA?hl=en">Google Arts &amp; Culture</a>.</li>
+        <li><strong>Lincoln Square Site Plan (May 28, 1956):</strong> New York City Committee on Slum Clearance, “Site Plan,” p. 17, <em>Lincoln Square: Slum Clearance Plan Under Title 1 of the Housing Act of 1949 as Amended</em>. The New York Public Library, <a href="https://digitalcollections.nypl.org/items/99407f80-9ef0-0130-f139-58d385a7bbd0">Digital Collections</a>, <a href="https://images.nypl.org/index.php?id=5038312&amp;t=u">original scan (image 5038312)</a>.</li>
+        <li><strong>Historical aerial photography (1924, 1951, 1996) and orthophotography (2024):</strong> New York City Office of Technology and Innovation, <a href="https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_AerialImagery.md">NYC Aerial Imagery</a>.</li>
+        <li><strong>Historical aerial photography (1960 and 1966):</strong> United States Geological Survey, <a href="https://earthexplorer.usgs.gov/">EarthExplorer</a>. Imagery acquired May 5, 1960, and February 23, 1966.</li>
+        <li><strong>Urban renewal area boundary:</strong> Manually digitized from a historical planning report. Tentative source: New York City Committee on Slum Clearance, <a href="https://archive.org/details/preliminaryrepor00newy_0"><em>Preliminary Report: Lincoln Square Project</em> (July 20, 1956)</a>, via Internet Archive.</li>
+      </ul>
+    </section>
+    <section aria-labelledby="methodology-title">
+      <h2 id="methodology-title">Methodology</h2>
+      <p>Historical plans and aerial photographs were georeferenced in QGIS and cropped to the study area for interactive comparison. The urban renewal area boundary was manually digitized from a historical planning document.</p>
+      <p>AI-assisted image editing was used on the New York Public Library's 1956 site plan to remove the visible spiral binding and align two slightly offset scanned pages. The restored image was closely checked against the original scan to preserve its cartographic details.</p>
+      <p>The source images are available in the <a href="https://github.com/jmarkey2/lincoln-square-maps/tree/main/raw-images">GitHub repository</a>. Download the <a href="https://github.com/jmarkey2/lincoln-square-maps/raw/refs/heads/main/raw-images/usgs/usgs-1960-05-05.tif">1960 USGS photograph (TIFF, 98.24 MiB)</a>, <a href="https://github.com/jmarkey2/lincoln-square-maps/raw/refs/heads/main/raw-images/usgs/usgs-1966-02-23.tif">1966 USGS photograph (TIFF, 95.56 MiB)</a>, <a href="https://github.com/jmarkey2/lincoln-square-maps/raw/refs/heads/main/raw-images/site-plans/lincoln-square-development-plan-1956.png">1956 development plan (PNG, 7.71 MiB)</a>, or <a href="https://github.com/jmarkey2/lincoln-square-maps/raw/refs/heads/main/raw-images/site-plans/lincoln-square-site-plan-restored-1956.jpg">restored 1956 site plan (JPEG, 14.38 MiB)</a>. The restored site plan includes the edits described above; the <a href="https://images.nypl.org/index.php?id=5038312&amp;t=u">untouched original scan</a> is available from NYPL.</p>
+    </section>
+  </main>
+</body>
+</html>

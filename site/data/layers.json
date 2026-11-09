@@ -1,0 +1,112 @@
+{
+  "bounds": [
+    [
+      40.76710043414115,
+      -73.991817635462
+    ],
+    [
+      40.7818075300414,
+      -73.97980995224312
+    ]
+  ],
+  "minZoom": 14,
+  "maxZoom": 21,
+  "defaultTop": "site-plan-1956",
+  "defaultBottom": "nyc-2024",
+  "layers": [
+    {
+      "id": "nyc-1924",
+      "year": 1924,
+      "label": "1924 \u00b7 NYC aerial imagery",
+      "maxNativeZoom": 19,
+      "sourceUrl": "https://tiles.arcgis.com/tiles/yG5s3afENB5iO9fj/arcgis/rest/services/Ortho_1924_Mosaic/MapServer",
+      "credit": "NYC OTI / NYC Department of City Planning",
+      "note": "Manually georeferenced historical photography, as supplied by NYC.",
+      "url": "tiles/nyc-1924/{z}/{x}/{y}.webp",
+      "tileCount": 766,
+      "bytes": 14434410
+    },
+    {
+      "id": "nyc-1951",
+      "year": 1951,
+      "label": "1951 \u00b7 NYC aerial imagery",
+      "maxNativeZoom": 19,
+      "sourceUrl": "https://tiles.arcgis.com/tiles/yG5s3afENB5iO9fj/arcgis/rest/services/NYC_Orthos_1951/MapServer",
+      "credit": "NYS DOS / NYC Department of Records Municipal Archives",
+      "note": "Manually georeferenced historical photography, as supplied by NYC.",
+      "url": "tiles/nyc-1951/{z}/{x}/{y}.webp",
+      "tileCount": 766,
+      "bytes": 15873532
+    },
+    {
+      "id": "development-plan-1956",
+      "year": 1956,
+      "label": "1956 \u00b7 Development plan",
+      "maxNativeZoom": 18,
+      "credit": "1956 Lincoln Square development plan \u00b7 supplied QGIS project",
+      "note": "Georeferenced scan supplied with the project; original archive citation was not included.",
+      "url": "tiles/development-plan-1956/{z}/{x}/{y}.webp",
+      "tileCount": 215,
+      "bytes": 6746904
+    },
+    {
+      "id": "site-plan-1956",
+      "year": 1956,
+      "label": "1956 \u00b7 Site plan (restored color)",
+      "maxNativeZoom": 20,
+      "credit": "1956 Lincoln Square site plan \u00b7 restored scan supplied with the project",
+      "note": "Restored color plan and georeferencing supplied with the project; original archive citation was not included.",
+      "url": "tiles/site-plan-1956/{z}/{x}/{y}.webp",
+      "tileCount": 2818,
+      "bytes": 96066542
+    },
+    {
+      "id": "usgs-1960",
+      "year": 1960,
+      "label": "1960 \u00b7 USGS aerial (May 5)",
+      "maxNativeZoom": 17,
+      "sourceUrl": "https://earthexplorer.usgs.gov/",
+      "credit": "USGS \u00b7 May 5, 1960 \u00b7 project georeferencing",
+      "note": "Historical aerial photograph georeferenced in the supplied project; positional accuracy varies.",
+      "url": "tiles/usgs-1960/{z}/{x}/{y}.webp",
+      "tileCount": 65,
+      "bytes": 1680810
+    },
+    {
+      "id": "usgs-1966",
+      "year": 1966,
+      "label": "1966 \u00b7 USGS aerial (February 23)",
+      "maxNativeZoom": 18,
+      "sourceUrl": "https://earthexplorer.usgs.gov/",
+      "credit": "USGS \u00b7 February 23, 1966 \u00b7 project georeferencing",
+      "note": "Historical aerial photograph georeferenced in the supplied project; positional accuracy varies.",
+      "url": "tiles/usgs-1966/{z}/{x}/{y}.webp",
+      "tileCount": 215,
+      "bytes": 5504534
+    },
+    {
+      "id": "nyc-1996",
+      "year": 1996,
+      "label": "1996 \u00b7 NYC orthophotography",
+      "maxNativeZoom": 19,
+      "sourceUrl": "https://tiles.arcgis.com/tiles/yG5s3afENB5iO9fj/arcgis/rest/services/Ortho_1996_Mosaic/MapServer",
+      "credit": "NYC \u00b7 1996 orthophotography",
+      "note": "NYC service describes one-foot source resolution; Manhattan photography includes June 1996.",
+      "url": "tiles/nyc-1996/{z}/{x}/{y}.webp",
+      "tileCount": 766,
+      "bytes": 55939334
+    },
+    {
+      "id": "nyc-2024",
+      "year": 2024,
+      "label": "2024 \u00b7 NYC orthophotography",
+      "maxNativeZoom": 20,
+      "sourceUrl": "https://tiles.arcgis.com/tiles/yG5s3afENB5iO9fj/arcgis/rest/services/NYC_Orthos_2024/MapServer",
+      "credit": "NYC Office of Technology and Innovation \u00b7 2024 orthophotography",
+      "note": "Locally packaged section of the final 2024 NYC orthoimagery service, through service level 20.",
+      "url": "tiles/nyc-2024/{z}/{x}/{y}.webp",
+      "tileCount": 2818,
+      "bytes": 144339020
+    }
+  ]
+}
